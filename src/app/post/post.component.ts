@@ -9,7 +9,7 @@ export class PostComponent implements OnInit {
 
   @Input() postTitle : string;
   @Input() postContent : string;
-  @Input() postLikes: number;
+  @Input() postLikes = 0;
   @Input() postCreation: string;
   @Input() postStatus: string;
 
@@ -18,14 +18,14 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public counter: number = 0;
+  // public counter: number = 0;
 
   increment() {
-    this.counter +=1;
+    this.postLikes +=1;
   }
 
   decrement() {
-    this.counter -=1;
+    this.postLikes -=1;
   }
 
   getStatus() {

@@ -5,11 +5,11 @@
   <p  style="text-align: right">{{ postCreation }}</p>
   <h4 [ngStyle]="{color: getColor()}">{{ postTitle }} </h4>
   <p>{{ postContent }}</p>
-  {{ counter }}
   <button class="btn btn-success"
   (click)="increment()"
   >Love it</button>     
+  {{ postLikes }}
   <button class="btn btn-danger"
   (click)="decrement()"
   >Don't like it</button>   
-</li>>
+</li>
